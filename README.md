@@ -9,3 +9,23 @@ When you type **bash auto_check_site.sh** in the terminal, you will see the mess
 ### Example of program operation
 
 ![alt text](/script_bash/example1.png)
+
+## Task 2. Clone a FastAPI application, configure and run it in a Docker container. Verify that the application and database connection are working correctly.
+
+_To create a container in docker:_
+
+**docker-compose up -d**
+
+![alt text](/Computer-Systems-hw02/complete.png)
+
+_In case of problems:_
+
+**docker-compose down**
+
+**docker-compose build --no-cache**
+
+**docker-compose up -d**
+
+### Example of program operation
+
+![alt text](/Computer-Systems-hw02/done.png)
