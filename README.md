@@ -4,8 +4,8 @@
 
 When you type **bash auto_check_site.sh** in the terminal, you will see the message _You can see results in check_web.log_
 
-![alt text](task1.png)
+![alt text](/script_bash/task1.png)
 
 ### Example of program operation
 
-![alt text](example1.png)
+![alt text](/script_bash/example1.png)
