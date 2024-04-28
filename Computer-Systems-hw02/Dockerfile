@@ -8,14 +8,15 @@ ENV APP_HOME /application
 # Встановимо робочу директорію всередині контейнера
 WORKDIR $APP_HOME
 
+# Копіювання файлів та встановилення залежностей всередині контейнера
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
 # Скопіюємо інші файли в робочу директорію контейнера
 COPY . .
 
-# Встановимо залежності всередині контейнера
-RUN pip install -r requirements.txt
-
 # Позначимо порт, де працює застосунок всередині контейнера
-EXPOSE 5000
+EXPOSE 8000
 
 # Запустимо наш застосунок всередині контейнера
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["python", "main.py"]
